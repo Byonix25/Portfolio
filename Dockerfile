@@ -7,11 +7,11 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 
 # Copy dependencies first for caching
 COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --frozen-lockfile --config.minimum-release-age=0
 
 # Copy source code and build
 COPY . .
-RUN pnpm run build
+RUN pnpm --config.minimum-release-age=0 run build
 
 # Production Stage
 FROM nginx:alpine
