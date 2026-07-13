@@ -1,4 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
+import profileImage from '../assets/profile.jpg';
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -28,7 +29,7 @@ export const Hero = () => {
       </div>
       <div className="hero-image-container">
         <div className="profile-image-placeholder">
-          <span>{t.hero.profileImage}</span>
+          <img src={profileImage} alt="Profile" className="profile-image" />
         </div>
       </div>
     </section>
