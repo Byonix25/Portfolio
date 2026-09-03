@@ -7,7 +7,7 @@ export const Experience = () => {
     {
       role: t.experience.wiediiRole,
       company: 'Wiedii S.A.S (MD CloudPS)',
-      date: 'Feb 2024 - Present',
+      date: 'Feb 2024 - June 2026',
       description: t.experience.wiediiDesc,
       tech: ['Go', 'Node.js', 'React.js', 'Docker', 'AWS', 'AI Workflows', 'MongoDB']
     },
