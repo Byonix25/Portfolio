@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import profileImage from '../assets/profile.jpg';
+import profileImage from '../assets/profile2.jpg';
 
 export const Hero = () => {
   const { t } = useLanguage();
